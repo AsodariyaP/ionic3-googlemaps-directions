@@ -1,0 +1,21 @@
+<ion-content>
+  <div id="floating-panel">
+    <b>Start: </b>
+    <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
+      <option value="ahmedabad, in">Ahmedabad</option>
+      <option value="Vadala Gir, in">Vadla Gir</option>
+      <option value="Junagadh, in">Junagadh</option>
+      <option value="somnath, in">Somnath</option>
+      <option value="surat, in">Surat</option>
+    </select><br>
+    <b>End: </b>
+    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="ahmedabad, in">Ahmedabad</option>
+      <option value="Vadala Gir, in">Vadla Gir</option>
+      <option value="Junagadh, in">Junagadh</option>
+      <option value="somnath, in">Somnath</option>
+      <option value="surat, in">Surat</option>
+    </select>
+    </div>
+    <div #map id="map"></div>
+</ion-content>
